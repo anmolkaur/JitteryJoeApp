@@ -4,53 +4,82 @@ jitteryApp.controller('ReviewListCtrl', function ($scope, $http) {
 
 
  /* $scope.coffees1 = [
-    {"name":"After Dinner", "description": "lorpem ipsum", "subcategories": [{"bestRated":"Yes", "available":"No", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
-    {"name":"Borque Newswatch", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
-    {"name":"CN Tower of Power", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
-    {"name":"Connoisseur Estates", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
-    {"name":"Columbian", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
-    {"name":"Dutch Trader","description": "lorpem ipsum", "subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
-    {"name":"Fordnation Blend", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
-    {"name":"French Roast", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
-    {"name":"Hawaii Kona", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
-    {"name":"House Blend", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
-    {"name":"Italian Roast","description": "lorpem ipsum", "subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
-    {"name":"Lionel Roastie", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
-    {"name":"Mocca-Java", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
-    {"name":"Raggae Blend", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
-    {"name":"Ruth Roast", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
-    {"name":"Toronto Blend", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
-    {"name":"Tropic of Coffee", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
-    {"name":"World Tour Blend", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] }
+    {"name":"After Dinner", "description": "lorpem ipsum", "subcategories": [{"bestRated":"Yes", "available":"No", "decaf":"Yes", "fairTrade":"Yes":"Yes", "roast":"Light"}] },
+    {"name":"Borque Newswatch", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes":"Yes", "roast":"Light"}] },
+    {"name":"CN Tower of Power", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes":"Yes", "roast":"Light"}] },
+    {"name":"Connoisseur Estates", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes":"Yes", "roast":"Light"}] },
+    {"name":"Columbian", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes":"Yes", "roast":"Light"}] },
+    {"name":"Dutch Trader","description": "lorpem ipsum", "subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes":"Yes", "roast":"Light"}] },
+    {"name":"Fordnation Blend", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes":"Yes", "roast":"Light"}] },
+    {"name":"French Roast", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes":"Yes", "roast":"Light"}] },
+    {"name":"Hawaii Kona", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes":"Yes", "roast":"Light"}] },
+    {"name":"House Blend", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes":"Yes", "roast":"Light"}] },
+    {"name":"Italian Roast","description": "lorpem ipsum", "subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes":"Yes", "roast":"Light"}] },
+    {"name":"Lionel Roastie", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes":"Yes", "roast":"Light"}] },
+    {"name":"Mocca-Java", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes":"Yes", "roast":"Light"}] },
+    {"name":"Raggae Blend", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes":"Yes", "roast":"Light"}] },
+    {"name":"Ruth Roast", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes":"Yes", "roast":"Light"}] },
+    {"name":"Toronto Blend", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes":"Yes", "roast":"Light"}] },
+    {"name":"Tropic of Coffee", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes":"Yes", "roast":"Light"}] },
+    {"name":"World Tour Blend", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes":"Yes", "roast":"Light"}] }
     ];
 
     var coffees1 = $scope.coffees1; */
 
     $scope.bestRated = ["bestRated"];
 
+
+    //Subcategories are: bestRated, available, decaf, fairTrade, 
     $scope.coffees = [
-      {"name":"After Dinner", "description": "lorpem ipsum", "roast": "Light", "subcategories": ["bestRated", "fairTrade", "limtedEdition"], "images":[] },
-      {"name":"Borque Newswatch", "description": "lorpem ipsum", "roast": "Light", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"], "images":[]},
-      {"name":"CN Tower of Power", "description": "lorpem ipsum", "roast": "Light", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"], "images":[] },
-      {"name":"Connoisseur Estates", "description": "lorpem ipsum", "roast": "Light", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
-      {"name":"Columbian", "description": "lorpem ipsum", "roast": "Light", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
-      {"name":"Dutch Trader", "description": "lorpem ipsum", "roast": "Light", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
-      {"name":"Fordnation Blend", "description": "lorpem ipsum", "roast": "Medium", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
-      {"name":"French Roast", "description": "lorpem ipsum", "roast": "Medium", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
-      {"name":"Hawaii Kona", "description": "lorpem ipsum", "roast": "Medium", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
-      {"name":"House Blend", "description": "lorpem ipsum", "roast": "Medium", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
-      {"name":"Italian Roast", "description": "lorpem ipsum", "roast": "Medium", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
-      {"name":"Lionel Roastie", "description": "lorpem ipsum", "roast": "Medium", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
-      {"name":"Mocca-Java", "description": "lorpem ipsum", "roast": "Dark", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
-      {"name":"Raggae Blend", "description": "lorpem ipsum", "roast": "Dark", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
-      {"name":"Toronto Blend", "description": "lorpem ipsum", "roast": "Dark", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
-      {"name":"Tropic of Coffee", "description": "lorpem ipsum", "roast": "Dark", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
-      {"name":"World Tour Blend", "description": "lorpem ipsum", "roast": "Dark", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] }
+      {"name":"After Dinner", 
+       "description": "lorpem ipsum", 
+       "roast": "Light", 
+       "subcategories": ["bestRated", "available"], 
+       "images":
+          ["images/ICON_PACKAGE/star_icon_brown.gif",
+          "images/ICON_PACKAGE/shield_icon_brown.gif", 
+          "images/ICON_PACKAGE/decaf_icon_beige.gif", 
+          "images/ICON_PACKAGE/scale_icon_beige.gif"]},
+      {"name":"Borque Newswatch", 
+        "description": "lorpem ipsum", 
+        "roast": "Light", 
+        "subcategories": [ "available"], 
+        "images":
+          ["images/ICON_PACKAGE/star_icon_beige.gif", 
+          "images/ICON_PACKAGE/shield_icon_brown.gif",
+          "images/ICON_PACKAGE/decaf_icon_beige.gif", 
+          "images/ICON_PACKAGE/scale_icon_beige.gif"]},
+      {"name":"CN Tower of Power", 
+        "description": "lorpem ipsum", 
+          "roast": "Light",
+          "subcategories": ["available", "fairTrade"], 
+          "images":
+          ["images/ICON_PACKAGE/star_icon_beige.gif", 
+          "images/ICON_PACKAGE/shield_icon_brown.gif", 
+          "images/ICON_PACKAGE/decaf_icon_beige.gif", 
+          "images/ICON_PACKAGE/scale_icon_brown.gif"] },
+      {"name":"Connoisseur Estates", "description": "lorpem ipsum", "roast": "Light", "subcategories": ["available", "decaf", "fairTrade"], "images":["images/ICON_PACKAGE/star_icon_beige.gif", "images/ICON_PACKAGE/shield_icon_brown.gif", "images/ICON_PACKAGE/decaf_icon_brown.gif", "images/ICON_PACKAGE/scale_icon_brown.gif"]},
+      {"name":"Columbian", "description": "lorpem ipsum", "roast": "Light", "subcategories": ["bestRated", "available",  "fairTrade"], "images":["images/ICON_PACKAGE/star_icon_brown.gif", "images/ICON_PACKAGE/shield_icon_brown.gif", "images/ICON_PACKAGE/decaf_icon_beige.gif", "images/ICON_PACKAGE/scale_icon_brown.gif"]},
+      {"name":"Dutch Trader",
+       "description": "lorpem ipsum",
+       "roast": "Light",
+       "subcategories": ["available",  "fairTrade"], "images":["images/ICON_PACKAGE/star_icon_beige.gif", "images/ICON_PACKAGE/shield_icon_brown.gif", "images/ICON_PACKAGE/decaf_icon_beige.gif", "images/ICON_PACKAGE/scale_icon_brown.gif"]},
+      {"name":"Fordnation Blend", "description": "lorpem ipsum", "roast": "Medium", "subcategories": ["available", "decaf", "fairTrade"],"images":["images/ICON_PACKAGE/star_icon_beige.gif", "images/ICON_PACKAGE/shield_icon_brown.gif", "images/ICON_PACKAGE/decaf_icon_brown.gif", "images/ICON_PACKAGE/scale_icon_brown.gif"] },
+      {"name":"French Roast", "description": "lorpem ipsum", "roast": "Medium", "subcategories": ["bestRated", "available",  "fairTrade"], "images":["images/ICON_PACKAGE/star_icon_brown.gif", "images/ICON_PACKAGE/shield_icon_brown.gif", "images/ICON_PACKAGE/decaf_icon_beige.gif", "images/ICON_PACKAGE/scale_icon_brown.gif"]},
+      {"name":"Hawaii Kona", "description": "lorpem ipsum", "roast": "Medium", "subcategories": ["bestRated", "available", "fairTrade"], "images":["images/ICON_PACKAGE/star_icon_brown.gif", "images/ICON_PACKAGE/shield_icon_brown.gif", "images/ICON_PACKAGE/decaf_icon_beige.gif", "images/ICON_PACKAGE/scale_icon_brown.gif"]},
+      {"name":"House Blend", "description": "lorpem ipsum", "roast": "Medium", "subcategories": ["available", "fairTrade"], "images":["images/ICON_PACKAGE/star_icon_beige.gif", "images/ICON_PACKAGE/shield_icon_brown.gif", "images/ICON_PACKAGE/decaf_icon_beige.gif", "images/ICON_PACKAGE/scale_icon_brown.gif"]},
+      {"name":"Italian Roast", "description": "lorpem ipsum", "roast": "Medium", "subcategories": ["available",  "fairTrade"], "images":["images/ICON_PACKAGE/star_icon_beige.gif", "images/ICON_PACKAGE/shield_icon_brown.gif", "images/ICON_PACKAGE/decaf_icon_beige.gif", "images/ICON_PACKAGE/scale_icon_brown.gif"]},
+      {"name":"Lionel Roastie", "description": "lorpem ipsum", "roast": "Medium", "subcategories": [ "available", "decaf", "fairTrade"], "images":["images/ICON_PACKAGE/star_icon_beige.gif", "images/ICON_PACKAGE/shield_icon_brown.gif", "images/ICON_PACKAGE/decaf_icon_brown.gif", "images/ICON_PACKAGE/scale_icon_brown.gif"]},
+      {"name":"Mocca-Java", "description": "lorpem ipsum", "roast": "Dark", "subcategories": ["bestRated",   "fairTrade"], "images":["images/ICON_PACKAGE/star_icon_brown.gif", "images/ICON_PACKAGE/shield_icon_beige.gif", "images/ICON_PACKAGE/decaf_icon_beige.gif", "images/ICON_PACKAGE/scale_icon_brown.gif"]},
+      {"name":"Raggae Blend", "description": "lorpem ipsum", "roast": "Dark", "subcategories": ["bestRated",  "fairTrade"], "images":["images/ICON_PACKAGE/star_icon_brown.gif", "images/ICON_PACKAGE/shield_icon_beige.gif", "images/ICON_PACKAGE/decaf_icon_beige.gif", "images/ICON_PACKAGE/scale_icon_brown.gif"]},
+      {"name":"Toronto Blend", "description": "lorpem ipsum", "roast": "Dark", "subcategories": [   "fairTrade"], "images":["images/ICON_PACKAGE/star_icon_beige.gif", "images/ICON_PACKAGE/shield_icon_beige.gif", "images/ICON_PACKAGE/decaf_icon_beige.gif", "images/ICON_PACKAGE/scale_icon_brown.gif"]},
+      {"name":"Tropic of Coffee", "description": "lorpem ipsum", "roast": "Dark", "subcategories": [ "decaf", "fairTrade"], "images":["images/ICON_PACKAGE/star_icon_beige.gif", "images/ICON_PACKAGE/shield_icon_beige.gif", "images/ICON_PACKAGE/decaf_icon_brown.gif", "images/ICON_PACKAGE/scale_icon_brown.gif"]},
+      {"name":"World Tour Blend", "description": "lorpem ipsum", "roast": "Dark", "subcategories": [ "fairTrade"], "images":["images/ICON_PACKAGE/star_icon_beige.gif", "images/ICON_PACKAGE/shield_icon_beige.gif", "images/ICON_PACKAGE/decaf_icon_beige.gif", "images/ICON_PACKAGE/scale_icon_brown.gif"]}
       
       ];
 
-
     var coffees = $scope.coffees;
+console.log(coffees);
    
 
 
