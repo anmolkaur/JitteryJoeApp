@@ -2,6 +2,33 @@ var jitteryApp = angular.module('jitteryApp', []);
 
 jitteryApp.controller('ReviewListCtrl', function ($scope, $http) {
 
+
+  $scope.coffees = [
+    {"name":"After Dinner", "description": "lorpem ipsum", "subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
+    {"name":"Borque Newswatch", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
+    {"name":"CN Tower of Power", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
+    {"name":"Connoisseur Estates", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
+    {"name":"Columbian", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
+    {"name":"Dutch Trader","description": "lorpem ipsum", "subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
+    {"name":"Fordnation Blend", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
+    {"name":"French Roast", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
+    {"name":"Hawaii Kona", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
+    {"name":"House Blend", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
+    {"name":"Italian Roast","description": "lorpem ipsum", "subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
+    {"name":"Lionel Roastie", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
+    {"name":"Mocca-Java", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
+    {"name":"Raggae Blend", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
+    {"name":"Ruth Roast", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
+    {"name":"Toronto Blend", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
+    {"name":"Tropic of Coffee", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
+    {"name":"World Tour Blend", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] }
+    ];
+
+    var coffees = $scope.coffees;
+
+
+
+
   // Set our reviews object to be empty by default.
   $scope.reviews = [];
 
