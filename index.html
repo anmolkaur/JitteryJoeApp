@@ -8,42 +8,17 @@
 
 			<!--header-->
 			<header class="row">
-				<div class="col-md-2">
-                    <img src="images/ICON_PACKAGE/Untitled-1.gif"/>
-                </div>
-                
-                <div class="col-md-8">
-                    <h1>Jittery Joe's</h1>
-                    <div class="slogan">
-                        Really good coffee.
-                    </div>
-                </div>
-                
-                <!--<div class="col-md-2">
-                	<p>Nav box</p>
-                </div>-->
-			</header><!--row ends-->
+				<img src="images/logo.png"/>
+				<h1>Jittery Joe's</h1>
+				<div class="slogan">
+					Really good coffee.
+				</div>
+			</header>
 
 			
 			<!--Feature-->
-			<section class="feature" >
-			
-				<div class="row">
-					
-					<div class="col-md-6">
-						<h1>Our Menu</h1>
-					</div>
-					
-					<div class="col-md-6">
-						<select name="sort-by" id="sort-by" class="sort-by pull-right">
-							<option value="Name">Name</option>
-							<option value="Price">Price</option>
-							<option value="Roast">Roast</option>
-						</select>
-					</div>
-				
-				</div><!-- end row -->
-				
+			<section class="feature">
+				<br />
 				<div class="row">
 					
 					<div class="col-md-6">
@@ -51,8 +26,7 @@
 						<div class="row">
 							
 							<div class="col-md-6">
-                            	
-								<h2>Featured:</h2>
+								<h2>Featured</h2>
 								<h3>The Dutch Trader</h3>
 								<h4>Dark Roast</h4>
 								<img src="images/ICON_PACKAGE/star_icon_brown.gif" width="50px" height="50px" /><!--remove inline styles later-->
@@ -76,42 +50,11 @@
 				</div><!-- end row -->	
 
 			</section>
-			<!-- Legend -->
-			<div class="row legend-wrapper">
-				<div class="col-md-4">
-					<h1>Legend:</h1>
-				</div>
-				
-				<div class="col-md-4">
-					<div class="row">
-						<img src="images/ICON_PACKAGE/star_icon_brown.gif" />
-						<h2>best rated</h2>
-					</div>
-					
-					<div class="row">
-						<img src="images/ICON_PACKAGE/decaf_icon_brown.gif"/>
-						<h2>decaf</h2>
-					</div>
-				</div>
-				
-				<div class="col-md-4">
-					<div class="row">
-						<img src="images/ICON_PACKAGE/scale_icon_brown.gif"/>
-						<h2>fair trade</h2>
-					</div>
-					
-					<div class="row">
-						<img src="images/ICON_PACKAGE/shield_icon_brown.gif"/>
-						<h2>limited edition</h2>
-					</div>
-				</div>
-				
-			</div>
 			
 			<!-- Coffee Listing -->
 			<div class="row coffee-listing-wrapper">
 				<br />
-				<label for="coffee-listing-field">Our Menu</label>
+				<label>Our Menu</label>
 				
 				<select name="sort-by" id="sort-by" class="sort-by pull-right">
 					<option value="Name">Name</option>
@@ -122,46 +65,13 @@
 				<div class="row">
 					<div class="form-group col-md-6" ng-repeat="coffee in coffees">
 						<article>
-							<div class="row">
-								<h1>{{coffee.name}}</h1>
-								<img src="images/ICON_PACKAGE/star_icon_brown.gif" />
-								<img src="images/ICON_PACKAGE/star_icon_biege.gif" />
-								
-								<img src="images/ICON_PACKAGE/decaf_icon_brown.gif"/>
-								<img src="images/ICON_PACKAGE/decaf_icon_biege.gif"/>
-								
-								<img src="images/ICON_PACKAGE/scale_icon_brown.gif"/>
-								<img src="images/ICON_PACKAGE/scale_icon_biege.gif"/>
-								
-								<img src="images/ICON_PACKAGE/shield_icon_brown.gif"/>
-								<img src="images/ICON_PACKAGE/shield_icon_biege.gif"/>
-								
-								<!-- Hide button -->
-								<img src="images/ICON_PACKAGE/more_info_icon"/>
-							</div>
-							
-							<div class="row">
-								<p>{{coffee.description}}</p>
-							</div>
-							
+							<h1>{{coffee.name}}</h1>
+							<p>{{coffee.description}}</p>
 						</article>
 					</div>
 				</div>
 				
 			</div>
-
-			<!--testing the filters!!-->
-			<div class="row">
-				<div class="form-group col-md-6" ng-repeat="coffee in coffees">
-					<div class = "filter col-md-6" ng-repeat="subcat in coffee.subcategories | filter: 'available'">
-						<article>
-							<h1>{{coffee.name}}</h1>
-							<!--<p>{{coffee.description}}</p>-->
-						</article>
-					<!--</div>-->
-				</div>
-			</div>
-
 
 
 			<!--Review form-->
@@ -238,53 +148,73 @@
 			<footer class="row">
 				
 
-				<!--logo-->
-				<div class ="col-md-6">
-					<div class="logo">
-						<img src="images/logo.png"/>
-						<div class="slogan">
-							Really good coffee.
-						</div>
-					</div>
-				</div>
-
-
-
 				<!--Newsletter form-->
+				
 				<div class ="col-md-6">
-					<form class="signup-form form-horizontal" name="signupForm" ng-submit="addNewSignup()" ng-hide="signupSent">
-						<label for="signupForm">Subscribe to newsletter:</label>
+				<form class="signup-form form-horizontal" name="signupForm" ng-submit="addNewSignup()" ng-hide="signupSent">
+						<label for="signupForm">Sign up for our Newsletter:</label>
 						<div class="user-name form-group">
 							<label class="col-md-2 control-label" for="user-name-field" name="user-name-field">Name
 							</label>
-							<div class="col-md-10">
+							<div class="col-md-7">
 								<input class="form-control" type="text" id="user-name-field" name="user-name-field" ng-model="user.name"/>
 							</div>
 						</div>
 						<div class="user-email form-group">
 							<label class="col-md-2 control-label" for="user-email-field" name="user-email-field">Email
 							</label>
-							<div class="col-md-10">
+							<div class="col-md-7">
 								<input class="form-control" type="text" id="user-email-field" name="user-email-field" ng-model="user.email"/>
-							</div>
-						</div>
-						<div class="submit form-group">
-							<div class="col-md-12">
+							</div>						
+							
+							<!-- <div class="submit form-group"> -->
+							<div class="col-md-3">
 								<button type="submit" class="btn btn-default pull-right">Send
 								</button>
 							</div>
-						</div>
-					</form>
-
-					<!--Thank you message.-->
+							<!-- </div> -->
+							<!--Thank you message.-->
 					<div class="signup-sent" ng-show="signupSent">
 						<h5>Thanks for signing up!</h5>
-					</div>	
+					</div>	<br/>
+				<div id="copyright">&copy; Jittery Joe's - <i>"really good coffee"</i>  2013 | All Rights Reserved  | &reg; Registered Trademark </div>
+						</div>
+
+				</form>
+                </div>
+				
+				<div class ="col-md-3">
+                <div id="address">
+                <strong>Contact Details</strong><br/>
+                <strong>(t)</strong> +1 64 7878 4444<br/>
+                <strong>(a)</strong> 267, Jittery Joe Avenue.<br/>
+                Toronto GTA, ON
+                </div>
+
+
+
+				
+
+					
 				</div>
+				
+				
+				<div class ="col-md-2" >
+		           <!-- <h1>Connect With Us</h1> -->
+				   <div class = "FBTwitter">
+				   <a style="display:inline" href="http://twitter.com/myplanetdigital" target="_blank"><img src="./images/twitter_logo.png" alt="Follow Connections 2014 on Twitter" width="50" height="50"></a>
+                        
+                   <a style="display:inline" href="https://www.facebook.com/groups/193030087560875/" target="_blank"><img src="./images/fb_logo.png" border="0" width="50" height="50" alt="Visit Connections 2014 on Facebook"></a>
+	               </div>
+			 </div> 	
+			 
+				
 			</footer>
 
+			
+
 		
-		</div>
+		
 
 		
 
