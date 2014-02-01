@@ -1,8 +1,30 @@
+@font-face
+{
+font-family: Antonio;
+src: url(images/Icon_Package/antonio/Antonio-Regular.ttf);
+}
+
+@font-face
+{
+font-family: Antonio-Light;
+src: url(images/Icon_Package/antonio/Antonio-Light.ttf);
+}
+
+@font-face
+{
+font-family: Antonio-Bold;
+src: url(images/Icon_Package/antonio/Antonio-Bold.ttf);
+}
+
 body{
 	color: #453524;
-	font-family: "Roboto Slab", sans-serif;
+	font-family: "Antonio", sans-serif;
 	margin: auto;
+	background-color: #B4C1A3;
+
 }
+
+
 
 h1,
 h2,
@@ -10,8 +32,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Roboto Slab", sans-serif;
-	font-weight: bold;
+	font-family: "Antonio-Bold", sans-serif;
+	margin: 2px;
 }
 
 header {
@@ -22,17 +44,57 @@ header img {
 	width: 150px;
 }
 header h1{
-	font-size: 58px;
+	font-size: 80px;
+	color: #664343;
 }
 
+header h2{
+
+}
+
+
 header .slogan {
-	font-size: 24px;
+	font-family: "Antonio-Light";
+	font-size: 30px;
+	color: #664343;
 }
 
 .main-wrapper {
 	margin: auto;
 	max-width: 800px;
 	width: 100%;
+}
+/**Feature**/
+
+.feature p {
+	color: #EFE9DB;
+}
+
+.feature h1 {
+	font-size: 96px;
+	color: #EFE9DB;
+}
+
+.feature h2 {
+	font-size: 32px;
+	color: #EFE9DB;
+}
+
+.feature h3 {
+	font-size: 20px;
+	color: #825856;
+}
+
+.feature h4 {
+	font-size: 16px;
+	color: #825856;;
+}
+/**Articles**/
+
+article h1 {
+	font-family: "Antonio-Light";
+	font-size: 24px;
+	color: #EFE9DB;
 }
 
 /**Ratings**/
@@ -52,16 +114,4 @@ footer .logo img {
 
 footer .logo .slogan{
 	font-size: 18px;
-}
-
-footer .FBTwitter{
-    float: right;
-	margin-right: -70px;
-	margin-top: 50px;
-
-}
-
-footer #copyright{
-font-size: 10px;
-margin-top: 4px;
 }
