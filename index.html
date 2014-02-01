@@ -9,7 +9,7 @@
 			<!--header-->
 			<header class="row">
 				<div class="col-md-2">
-                    <img src="images/ICON_PACKAGE/Untitled-1.gif/"/>
+                    <img src="images/ICON_PACKAGE/Untitled-1.gif"/>
                 </div>
                 
                 <div class="col-md-8">
@@ -99,17 +99,17 @@
 				
 			</div>
 
-				<!--testing the filters!!-->
-				<div class="row">
-					<div class="form-group col-md-6" ng-repeat="coffee in coffees1">
-						<div class = "filter col-md-6" ng-repeat="subcat in coffee.subcategories | filter: 'available'">
-							<article>
-								<h1>{{coffee.name}}</h1>
-								<!--<p>{{coffee.description}}</p>-->
-							</article>
-						<!--</div>-->
-					</div>
+			<!--testing the filters!!-->
+			<div class="row">
+				<div class="form-group col-md-6" ng-repeat="coffee in coffees">
+					<div class = "filter col-md-6" ng-repeat="subcat in coffee.subcategories | filter: 'available'">
+						<article>
+							<h1>{{coffee.name}}</h1>
+							<!--<p>{{coffee.description}}</p>-->
+						</article>
+					<!--</div>-->
 				</div>
+			</div>
 
 
 
