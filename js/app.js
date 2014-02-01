@@ -3,8 +3,8 @@ var jitteryApp = angular.module('jitteryApp', []);
 jitteryApp.controller('ReviewListCtrl', function ($scope, $http) {
 
 
-  $scope.coffees = [
-    {"name":"After Dinner", "description": "lorpem ipsum", "subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
+ /* $scope.coffees1 = [
+    {"name":"After Dinner", "description": "lorpem ipsum", "subcategories": [{"bestRated":"Yes", "available":"No", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
     {"name":"Borque Newswatch", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
     {"name":"CN Tower of Power", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
     {"name":"Connoisseur Estates", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] },
@@ -24,7 +24,34 @@ jitteryApp.controller('ReviewListCtrl', function ($scope, $http) {
     {"name":"World Tour Blend", "description": "lorpem ipsum","subcategories": [{"bestRated":"Yes", "available":"Yes", "decaf":"Yes", "fairTrade":"Yes", "limtedEdition":"Yes", "roast":"Light"}] }
     ];
 
+    var coffees1 = $scope.coffees1; */
+
+    $scope.bestRated = ["bestRated"];
+
+    $scope.coffees = [
+      {"name":"After Dinner", "description": "lorpem ipsum", "roast": "Light", "subcategories": ["bestRated", "fairTrade", "limtedEdition"], "images":[] },
+      {"name":"Borque Newswatch", "description": "lorpem ipsum", "roast": "Light", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"], "images":[]},
+      {"name":"CN Tower of Power", "description": "lorpem ipsum", "roast": "Light", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"], "images":[] },
+      {"name":"Connoisseur Estates", "description": "lorpem ipsum", "roast": "Light", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
+      {"name":"Columbian", "description": "lorpem ipsum", "roast": "Light", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
+      {"name":"Dutch Trader", "description": "lorpem ipsum", "roast": "Light", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
+      {"name":"Fordnation Blend", "description": "lorpem ipsum", "roast": "Medium", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
+      {"name":"French Roast", "description": "lorpem ipsum", "roast": "Medium", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
+      {"name":"Hawaii Kona", "description": "lorpem ipsum", "roast": "Medium", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
+      {"name":"House Blend", "description": "lorpem ipsum", "roast": "Medium", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
+      {"name":"Italian Roast", "description": "lorpem ipsum", "roast": "Medium", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
+      {"name":"Lionel Roastie", "description": "lorpem ipsum", "roast": "Medium", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
+      {"name":"Mocca-Java", "description": "lorpem ipsum", "roast": "Dark", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
+      {"name":"Raggae Blend", "description": "lorpem ipsum", "roast": "Dark", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
+      {"name":"Toronto Blend", "description": "lorpem ipsum", "roast": "Dark", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
+      {"name":"Tropic of Coffee", "description": "lorpem ipsum", "roast": "Dark", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] },
+      {"name":"World Tour Blend", "description": "lorpem ipsum", "roast": "Dark", "subcategories": ["bestRated", "available", "decaf", "fairTrade", "limtedEdition"] }
+      
+      ];
+
+
     var coffees = $scope.coffees;
+   
 
 
 
