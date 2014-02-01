@@ -53,3 +53,15 @@ footer .logo img {
 footer .logo .slogan{
 	font-size: 18px;
 }
+
+footer .FBTwitter{
+    float: right;
+	margin-right: -70px;
+	margin-top: 50px;
+
+}
+
+footer #copyright{
+font-size: 10px;
+margin-top: 4px;
+}
