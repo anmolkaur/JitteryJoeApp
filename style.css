@@ -21,10 +21,7 @@ body{
 	font-family: "Antonio", sans-serif;
 	margin: auto;
 	background-color: #B4C1A3;
-
 }
-
-
 
 h1,
 h2,
@@ -48,10 +45,10 @@ header h1{
 	color: #664343;
 }
 
-header h2{
-
+.icon {
+	width: 30px;
+	height: 30px;
 }
-
 
 header .slogan {
 	font-family: "Antonio-Light";
