@@ -15,36 +15,10 @@
 				</div>
 			</header>
 
-			<!-- Coffee Listing -->
-
-			<div class"coffee-listing-wrapper">
-				<article>
-					<h1>After Dinner</h1>
-					<p>Dark roast with sweet undertones and hints of hazelnut.</p>
-					
-				</article>
-
-			</div>
-
-			<!--Feature-->
-			<section class="feature" >
 			
-				<div class="row">
-					
-					<div class="col-md-6">
-						<h1>Our Menu</h1>
-					</div>
-					
-					<div class="col-md-6">
-						<select name="sort-by" id="sort-by" class="sort-by pull-right">
-							<option value="Name">Name</option>
-							<option value="Price">Price</option>
-							<option value="Roast">Roast</option>
-						</select>
-					</div>
-				
-				</div><!-- end row -->
-				
+			<!--Feature-->
+			<section class="feature">
+				<br />
 				<div class="row">
 					
 					<div class="col-md-6">
@@ -76,6 +50,29 @@
 				</div><!-- end row -->	
 
 			</section>
+			
+			<!-- Coffee Listing -->
+			<div class="row coffee-listing-wrapper">
+				<br />
+				<label>Our Menu</label>
+				
+				<select name="sort-by" id="sort-by" class="sort-by pull-right">
+					<option value="Name">Name</option>
+					<option value="Price">Price</option>
+					<option value="Roast">Roast</option>
+				</select>
+					
+				<div class="row">
+					<div class="form-group col-md-6" ng-repeat="coffee in coffees">
+						<article>
+							<h1>{{coffee.name}}</h1>
+							<p>{{coffee.description}}</p>
+						</article>
+					</div>
+				</div>
+				
+			</div>
+
 
 			<!--Review form-->
 			<div class"review-form-wrapper row">
