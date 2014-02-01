@@ -42,6 +42,7 @@
             			</select>
             		</div>
 
+<<<<<<< HEAD
             	</div><!-- end row -->
 
             	<div class="row">
@@ -278,6 +279,75 @@
 
             </div>
 
+=======
+				<!--Newsletter form-->
+				
+				<div class ="col-md-6">
+				<form class="signup-form form-horizontal" name="signupForm" ng-submit="addNewSignup()" ng-hide="signupSent">
+						<label for="signupForm">Sign up for our Newsletter:</label>
+						<div class="user-name form-group">
+							<label class="col-md-2 control-label" for="user-name-field" name="user-name-field">Name
+							</label>
+							<div class="col-md-7">
+								<input class="form-control" type="text" id="user-name-field" name="user-name-field" ng-model="user.name"/>
+							</div>
+						</div>
+						<div class="user-email form-group">
+							<label class="col-md-2 control-label" for="user-email-field" name="user-email-field">Email
+							</label>
+							<div class="col-md-7">
+								<input class="form-control" type="text" id="user-email-field" name="user-email-field" ng-model="user.email"/>
+							</div>						
+							
+							<!-- <div class="submit form-group"> -->
+							<div class="col-md-3">
+								<button type="submit" class="btn btn-default pull-right">Send
+								</button>
+							</div>
+							<!-- </div> -->
+							<!--Thank you message.-->
+					<div class="signup-sent" ng-show="signupSent">
+						<h5>Thanks for signing up!</h5>
+					</div>	<br/>
+				<div id="copyright">&copy; Jittery Joe's - <i>"really good coffee"</i>  2013 | All Rights Reserved  | &reg; Registered Trademark </div>
+						</div>
+
+				</form>
+                </div>
+				
+				<div class ="col-md-3">
+                <div id="address">
+                <strong>Contact Details</strong><br/>
+                <strong>(t)</strong> +1 64 7878 4444<br/>
+                <strong>(a)</strong> 267, Jittery Joe Avenue.<br/>
+                Toronto GTA, ON
+                </div>
+
+
+
+				
+
+					
+				</div>
+				
+				
+				<div class ="col-md-2" >
+		           <!-- <h1>Connect With Us</h1> -->
+				   <div class = "FBTwitter">
+				   <a style="display:inline" href="http://twitter.com/myplanetdigital" target="_blank"><img src="./images/twitter_logo.png" alt="Follow Connections 2014 on Twitter" width="50" height="50"></a>
+                        
+                   <a style="display:inline" href="https://www.facebook.com/groups/193030087560875/" target="_blank"><img src="./images/fb_logo.png" border="0" width="50" height="50" alt="Visit Connections 2014 on Facebook"></a>
+	               </div>
+			 </div> 	
+			 
+				
+			</footer>
+
+			
+
+		
+		
+>>>>>>> b797772bb756268195ebeea55ec57ddac251a630
 
 
             <!-- Load things -->
