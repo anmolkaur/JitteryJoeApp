@@ -15,16 +15,16 @@
 				</div>
 			</header>
 
-			
+
 			<!--Feature-->
 			<section class="feature">
 				<br />
 				<div class="row">
-					
+
 					<div class="col-md-6">
-						
+
 						<div class="row">
-							
+
 							<div class="col-md-6">
 								<h2>Featured</h2>
 								<h3>The Dutch Trader</h3>
@@ -32,36 +32,36 @@
 								<img src="images/ICON_PACKAGE/star_icon_brown.gif" width="50px" height="50px" /><!--remove inline styles later-->
 								<img src="images/ICON_PACKAGE/scale_icon_brown.gif" width="50px" height="50px" /><!--remove inline styles later-->
 							</div>
-							
+
 							<div class="col-md-6">
 								<img src="images/ICON_PACKAGE/featured_image.gif" width="200px" height="200px" /><!--remove inline styles later-->
 							</div>
-						
+
 						</div><!-- end row -->
-					
+
 					</div>
-					
+
 					<div class="col-md-6">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis eleifend nunc eget accumsan. Proin faucibus dolor ac nisi ornare tempus. </p>
 						<p>Praesent ut malesuada nibh. Praesent venenatis lacus at odio venenatis, in mattis nunc aliquet. Ut sollicitudin turpis at lorem pretium suscipit. Proin eros nunc, ullamcorper pulvinar vestibulum eget, mollis nec velit. Proin tempor tellus ornare est facilisis dignissim. Quisque semper pulvinar nibh in vestibulum.</p>
 						<p>Donec placerat mollis metus, in euismod nulla congue non. Mauris consequat nibh eget tristique tempus. Integer non nisl dignissim, pretium est id, lementum ligula. Nam consequat venenatis eros, ut tincidunt metus dignis.</p>
 					</div>
-				
-				</div><!-- end row -->	
+
+				</div><!-- end row -->
 
 			</section>
-			
+
 			<!-- Coffee Listing -->
 			<div class="row coffee-listing-wrapper">
 				<br />
 				<label>Our Menu</label>
-				
+
 				<select name="sort-by" id="sort-by" class="sort-by pull-right">
 					<option value="Name">Name</option>
 					<option value="Price">Price</option>
 					<option value="Roast">Roast</option>
 				</select>
-					
+
 				<div class="row">
 					<div class="form-group col-md-6" ng-repeat="coffee in coffees">
 						<article>
@@ -70,14 +70,14 @@
 						</article>
 					</div>
 				</div>
-				
+
 			</div>
 
 
 			<!--Review form-->
 			<div class"review-form-wrapper row">
 				<form name="ratingForm" ng-submit="addNewRating()">
-					
+
 					<!--dropdown-->
 					<div class="review-item form-group col-md-4">
 						<label for="review-item-field">Choose a blend</label>
@@ -108,7 +108,7 @@
 						<label>Blend rating</label>
 						<br />
 						<label ng-repeat="num in [1,2,3,4,5]">
-							<input ng-model="review.rating" type="radio" id="rating-{{num}}" name="review-rating-field" value="{{num}}">{{num}}  
+							<input ng-model="review.rating" type="radio" id="rating-{{num}}" name="review-rating-field" value="{{num}}">{{num}}
 						</label>
 					</div>
 
@@ -123,7 +123,7 @@
 						<button type="submit" class="btn btn-default pull-right">Send</button>
 					</div>
 				</form>
-			</div>	
+			</div>
 
 
 
@@ -135,9 +135,10 @@
 				<div class="col-md-6 review" ng-repeat="review in reviews">
 					<h4 class = "review-item">{{review.item}}</h4>
 					-
-					<div class="review-rating">{{review.rating}}/5</div>
-					<div class="review-comment">{{review.comment}}</div>
-					<div class="review-date pull-right">{{ (review.node_created * 1000) | date: 'MMM d-h:mma'}}</div>
+          <button value="show/hide" ng-click="showHide = !showHide">show / hide</button>
+					<div ng-show="showHide" class="review-rating">{{review.rating}}/5</div>
+					<div ng-show="showHide" class="review-comment">{{review.comment}}</div>
+					<div ng-show="showHide" class="review-date pull-right">{{ (review.node_created * 1000) | date: 'MMM d-h:mma'}}</div>
 				</div>
 			</div>
 
@@ -146,7 +147,7 @@
 
 			<!--Footer-->
 			<footer class="row">
-				
+
 
 				<!--logo-->
 				<div class ="col-md-6">
@@ -189,14 +190,14 @@
 					<!--Thank you message.-->
 					<div class="signup-sent" ng-show="signupSent">
 						<h5>Thanks for signing up!</h5>
-					</div>	
+					</div>
 				</div>
 			</footer>
 
-		
+
 		</div>
 
-		
+
 
 		<!-- Load things -->
 
